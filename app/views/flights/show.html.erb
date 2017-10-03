@@ -1,0 +1,20 @@
+<div class="page-header">
+  <%= link_to flights_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_flight_path(@flight), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show flight</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Origin:</dt>
+  <dd><%= @flight.Origin %></dd>
+
+  <dt>Destination:</dt>
+  <dd><%= @flight.Destination %></dd>
+
+</dl>
